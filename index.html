@@ -1,2 +1,315 @@
-# likelion
-# likelion
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>안윤하</title>
+    </head>
+    <body>
+        <section id="navbar">
+            <ul>
+              <li style="float:right"><a class="nav-content" href="#contact">Contact</a></li>
+              <li style="float:right"><a class="nav-content" href="#like">Like</a></li>
+              <li style="float:right"><a class="nav-content" href="#info">Info</a></li>
+              <li style="float:right"><a class="nav-content" href="#home">Home</a></li>
+            </ul>    
+        </section>
+      
+        
+        <section id="home">
+      <div class="homecontent">
+		<h3>멋쟁이 사자처럼 5기</h3>
+		<h1>안윤하</h1>
+		<hr style="width: 240px; margin-bottom:10px">
+		<br>
+	</div>     
+        </section>
+        
+        
+    <section id ="info">
+        <div class="section-title">
+		<strong>01</strong>
+		<h1 class="heading bold" style="font-size:100px;">Info</h1>
+		<hr>
+	</div>    
+	<table style="width:90%; margin-left:5%">
+		<tbody><tr>
+			<td><%= image_tag 'birth.png' %></td>
+			<td><%= image_tag 'blood.png' %></td>
+			<td><%= image_tag 'skku.jpg' %></td>
+		</tr>
+		<tr>
+			<td style="padding-top:25px"><b style= "font-size : 100px">1997.11.25</b></td>
+			<td style="padding-top:25px"><b style= "font-size : 100px">RH O+</b></td>
+			<td style="padding-top:25px"><b style= "font-size : 100px">Sungkyunkwan University</b></td>
+		</tr>
+	</tbody></table>
+        </section>
+        
+        
+        
+        <section id ="like">
+        <div class="section-title">
+		<strong>02</strong>
+		<h1 class="heading bold" style="font-size:100px;">Like</h1>
+		<hr>
+	</div>    
+	<table style="width:90%; margin-left:5%">
+		<tbody><tr>
+			<td><%= image_tag 'icecream.png' %></td>
+			<td><%= image_tag 'coffee.png' %></td>
+			<td><%= image_tag 'sleep.png' %></td>
+		</tr>
+		<tr>
+			<td style="padding-top:25px"><b style= "font-size : 100px">Icecream</b></td>
+			<td style="padding-top:25px"><b style= "font-size : 100px">Coffee</b></td>
+			<td style="padding-top:25px"><b style= "font-size : 100px">Sleep</b></td>
+		</tr>
+	</tbody></table>
+        </section>
+	</div>
+        
+        <section id ="contact">
+            <div class="section-title">
+		<strong>03</strong>
+		<h1 class="heading bold" style="font-size:100px">Contact</h1>
+		<hr style="border-color:#CCC;">
+	</div>
+	<div class="contact-boxs" style="margin-left:7%">
+		<div class="contact-box">
+		<p style= "font-size : 50px">ahnyunha97</p>
+		</div>
+		<div class="contact-box">
+		<p style= "font-size : 50px">안윤하</p>
+		</div>
+		<div class="contact-box" style="width:25%">
+		<p style="padding-left:20%","font-size : 80px">ahnyunha97@naver.com</p>
+		</div>
+	
+        </section>
+    </body>
+    
+</html>
+
+
+<body>
+    <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#tbody {
+    font-size : 300px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+    #navbar {
+    top: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    }    
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4B4B4B;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+Inherited from ul
+style.css:38
+
+#home {
+    z-index: 9;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    background-color : gray;
+    align-items: center;
+    height: 95vh;
+}
+
+.homecontent {
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+}
+
+#home h3 {
+    font-size : 50px;
+    padding-top : 80px;
+    font-family: 'Malgun Gothic' !important;
+}
+
+#home h1 {
+    font-size: 200px;
+    font-family: 'Arial', cursive;
+    margin-bottom: 5px;
+}
+
+hr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+Inherited from div.homecontent
+style.css:94
+
+
+#info {
+    width: 100%;
+    text-align: center;
+}
+
+#info, #like, #contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: table;
+    margin: 0 0;
+}
+#contact{
+    padding-left : 140px;
+}
+#info{
+    padding-left : 380px;
+    text-align : center;
+}
+#like{
+    text-align : center;
+    padding-left : 200px;
+}
+
+.section-title {
+    padding-bottom: 32px;
+    text-align : center;
+}
+
+.section-title strong {
+    color: #00C6D7;
+    font-size: 200px;
+}
+
+.fisrt-section {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+#info img {
+    width: 1000px;
+    height: 1000px;
+    padding : 170px;
+}
+
+#info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align : center;
+}
+
+#like img {
+    width: 1000px;
+    height: 1000px;
+    padding-left : 250px;
+    padding-right :250px;
+    border : 900px;
+}
+
+.hr_in_box {
+    border-top: 5px solid #C9C9C9;
+}
+
+#info p {
+    font-size: 16px;
+    text-align : center;
+}
+
+#contact {
+    width: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.section-title {
+    padding-bottom: 32px;
+}
+
+.section-title strong {
+    color: #00C6D7;
+    font-size: 56px;
+}
+
+.section-title h1 {
+    font-size: 24px;
+}
+
+.section-title hr {
+    border-top: 1px solid #eee;
+    width: 13%;
+}
+
+.contact-box {
+    width: 15%;
+    margin-left: 10%;
+    height: 50px;
+    box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.20);
+    text-align: left !important;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    float: left;
+}
+
+.contact-box img {
+    width: auto;
+    height: 50px;
+}
+
+.contact-box p {
+    padding-left: 30%;
+    padding-top: 2px;
+    margin: 0;
+    cursor: pointer;
+}
+    </style>
+</body>
